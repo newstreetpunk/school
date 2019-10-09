@@ -10,13 +10,13 @@
 	color: #fff
 
 body
-	font-size: 16px
+	font-size: 18px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
-	font-weight: normal
+	font-weight: 400
 	color: $text
 	&.ishome
 		//min-height: 700px
@@ -33,7 +33,6 @@ body
 			border-color: green
 a
 	color: $accent
-	font-weight: 600
 	text-decoration: underline
 	transition: all .2s ease
 	&:hover
@@ -46,3 +45,35 @@ img
 
 b, strong
 	font-weight: 600
+.acc-c
+	color: $accent
+
+.welcome
+	color: #fff
+	font-size: .94vmax
+	display: flex
+	align-items: flex-end
+	height: 100%
+	&__block
+		max-width: 78.1vw
+		width: 100%
+		margin: 0 auto 4%
+		position: relative
+		z-index: 1
+		padding: 70px 85px
+		&:before
+			content: ''
+			display: block
+			width: 95%
+			height: 100%
+			background-color: rgba(#000, .88)
+			position: absolute
+			left: 0
+			top: 0
+			z-index: -1
+		&-content
+			width: 50%
+		.site-name
+			position: absolute
+			right: 0
+			bottom: 0

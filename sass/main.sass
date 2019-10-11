@@ -173,13 +173,15 @@ ul, li
 	border: none
 	cursor: pointer
 	padding: 0
+	display: none
+	z-index: 10
 
 .mobile-btn span
 	width: 25px
 	height: 2px
 	background-color: #fff
 	display: block
-	margin: 3px auto
+	margin: 4px auto
 	-webkit-transform: rotate(0)
 	-ms-transform: rotate(0)
 	-o-transform: rotate(0)
@@ -196,7 +198,7 @@ ul, li
 	-o-transform: rotate(45deg)
 	transform: rotate(45deg)
 	position: relative
-	top: 5px
+	top: 6px
 
 .mobile-btn.active span:nth-child(2) 
 	opacity: 0
@@ -207,15 +209,21 @@ ul, li
 	-o-transform: rotate(-45deg)
 	transform: rotate(-45deg)
 	position: relative
-	top: -5px
+	top: -6px
 
 .header
 	background-color: #000
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+	position: relative
+	a
+		color: #fff
 	&__top
 		display: flex
 		align-items: center
 		justify-content: space-between
 		padding: 15px 0
+		margin-bottom: 20px
+		z-index: 1
 		.custom-logo-link
 			width: 38px
 		&--right
@@ -241,6 +249,32 @@ ul, li
 								margin-right: 10px
 							.count
 								margin-right: 6px
+	&__bottom
+		nav
+			ul
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin: 0
+				li
+					background-color: transparent
+					cursor: pointer
+					flex: auto
+					text-align: center
+					transition: all .25s ease
+					&:hover, &.current-item
+						background-color: #fff
+						a
+							color: #000
+							text-decoration: none
+					a
+						text-transform: uppercase
+						font-size: 16px
+						font-weight: 400
+						display: block
+						height: 100%
+						padding: 12px 30px
+						white-space: nowrap
 
 
 

@@ -9,6 +9,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	.welcome
+		font-size: 1.3vmax
+		padding-right: 20px
+		padding-left: 20px
+	.welcome__block
+		max-width: 100%
+	.welcome .ksy-photo
+		width: 35vw
+	.welcome__block-content
+		width: 55%
 
 
 // ≥768px
@@ -31,3 +41,9 @@
 
 // ≤1200px
 +media-breakpoint-up(xl)
+
+//MAIN MEDIA
+
+@media screen and (max-height: 1100px)
+	.welcome
+		padding-top: 6vw

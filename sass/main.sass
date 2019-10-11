@@ -19,8 +19,8 @@ body
 	font-weight: 400
 	color: $text
 	&.ishome
-		min-height: 700px
-		height: 100vh
+		min-height: 100vh
+		height: auto
 		background-size: cover
 		background-repeat: no-repeat
 		background-position: bottom center
@@ -33,11 +33,10 @@ body
 			border-color: green
 a
 	color: $accent
-	text-decoration: underline
 	transition: all .2s ease
 	&:hover
-		text-decoration: none
-		color: $accent
+		text-decoration: underline
+		color: lighten($accent, 5%)
 img
 	display: block
 	max-width: 100%
@@ -53,7 +52,9 @@ b, strong
 	font-size: .94vmax
 	display: flex
 	align-items: flex-end
+	min-height: 100vh
 	height: 100%
+	//padding-top: 6vw
 	&__block
 		max-width: 78.1vw
 		width: 100%
@@ -87,9 +88,7 @@ b, strong
 		width: 20.3vw
 		display: flex
 		align-items: center
-		margin-bottom: 30px
-		img
-			margin-right: 30px
+		margin-bottom: 1.56vw
 		&--descr
 			height: 93px
 			display: flex
@@ -112,21 +111,23 @@ b, strong
 		font-size: 3.43vmax
 		font-weight: 400
 		line-height: 1
-		margin-bottom: 15px
+		margin-bottom: 1.04vw
 		span
 			font-size: 2.76vmax
 	&__text
 		padding-bottom: 5.73vmax
+		p
+			margin-bottom: 1vw
 		a
 			font-size: 1.25vmax
 			font-weight: 500
 			text-decoration: none
 	.pizdulka
-		width: 32px
-		height: 32px
+		width: 1.7vw
+		height: 1.7vw
 		background-color: $accent
 		position: absolute
-		left: 45%
+		left: 48%
 		top: 80%
 	.sections__site
 		font-size: 1.66vmax
@@ -149,6 +150,11 @@ b, strong
 			background-color: $accent
 			&:last-child
 				background-color: #2E1559
+				&:hover
+					background-color: lighten(#2E1559, 5%)
+			&:hover
+				background-color: darken($accent, 5%)
+
 	.ksy-photo
 		width: 32vw
 		position: absolute

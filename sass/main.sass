@@ -34,6 +34,7 @@ body
 a
 	color: $accent
 	transition: all .2s ease
+	text-decoration: none
 	&:hover
 		text-decoration: underline
 		color: lighten($accent, 5%)
@@ -44,6 +45,11 @@ img
 
 b, strong
 	font-weight: 600
+
+ul, li
+	list-style: none
+	padding: 0
+	margin: 0
 .acc-c
 	color: $accent
 
@@ -160,6 +166,40 @@ b, strong
 		position: absolute
 		right: 0
 		bottom: 4.16vmax
+
+.header
+	background-color: #000
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 15px 0
+		.custom-logo-link
+			width: 38px
+		&--right
+			nav
+				ul
+					display: flex
+					margin: 0
+					li
+						margin-right: 45px
+						&:last-child
+							margin-right: 0
+							a
+								text-decoration: underline
+								&:hover
+									text-decoration: none
+							img
+								margin-top: 3px
+						a
+							color: #fff
+							display: flex
+							align-items: center
+							img
+								margin-right: 10px
+							.count
+								margin-right: 6px
+
 
 
 

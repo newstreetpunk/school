@@ -34,6 +34,18 @@
 		margin-bottom: 20px
 	.footer__item
 		padding-left: 10px
+	.thambnail__block
+		margin-top: -50px
+	.fromautor__text p
+		width: 100%
+	.fromautor__text img
+		width: 40%
+	.about__brand--item_text
+		padding: 0 3%
+		p
+			font-size: 14px
+
+
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -87,7 +99,7 @@
 		&--mobile
 			display: block
 			font-size: 16px
-			color: #000
+			color: $text
 			padding: 20px 20px 30px
 			background-color: rgba(#ebedf2, .95)
 			a
@@ -128,8 +140,41 @@
 		position: relative
 	.welcome .sections__site.sections__site--mobile
 		display: flex
-	
-// ≥576px
+	.thambnail__block
+		padding-top: 50px 
+		.container
+			align-items: center
+	.fromautor
+		flex-direction: column-reverse
+		align-items: center
+	.fromautor__text, .fromautor__photo
+		width: 100%
+	.fromautor__text
+		margin-top: 20px
+		padding-bottom: 80px
+		h1
+			text-align: center
+			margin-bottom: 25px
+	.fromautor__text img
+		bottom: -30px
+	.about__brand--item
+		flex-direction: column !important
+		margin-bottom: 50px
+		div
+			width: 100%
+			img
+				width: auto
+				margin-bottom: 20px
+	.about__brand--item_text
+		padding: 0
+		font-size: 16px
+		p
+			font-size: 16px
+	.about__brand
+		margin-top: 60px
+
+
+
 +media-breakpoint-down(xs)
 	.welcome-hi
 		width: 95%
@@ -190,6 +235,30 @@
 		top: 9px
 	.footer
 		padding-bottom: 30px
+	.thambnail__block--logo
+		display: none
+	.thambnail__block
+		padding-bottom: 0
+		background-position: center bottom 50px
+		.container
+			justify-content: flex-end
+			.black-btn
+				display: block
+				width: 100%
+				position: absolute
+				left: 0
+				bottom: 0
+				text-align: center
+	.fromautor
+		margin-top: 35px
+	.fromautor__text img
+		bottom: 0
+	.fromautor__photo
+		p
+			text-align: left
+
+
+
 
 
 /*==========  Mobile First  ==========*/

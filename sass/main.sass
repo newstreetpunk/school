@@ -316,7 +316,8 @@ ul, li
 				left: 0
 				top: 12px
 hr
-	margin-bottom: 10px
+	margin-bottom: 8px
+	margin-top: 15px
 	background-color: #5a6891
 	opacity: .6
 .condition
@@ -344,6 +345,89 @@ hr
 				color: $accent2
 				margin-bottom: 15px
 				font-weight: 500
+
+.btn
+	font-size: 16px
+	font-weight: 500
+	padding: 20px 45px
+	color: #fff
+	text-transform: uppercase
+.black-btn
+	background-color: #000
+	&:hover
+		background-color: #535353
+		color: #fff
+		text-decoration: none
+	&:active, &:focus
+		background-color: #000
+.df
+	display: flex
+	justify-content: space-between
+.thambnail__block
+	margin-top: -30px
+	background-size: cover
+	background-position: center
+	padding: 30px 0
+	position: relative
+	&--logo
+		margin-bottom: 30px
+	.container
+		height: 36.45vmax
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-end
+.fromautor
+	margin-top: 60px
+	&__text
+		width: 55%
+		text-align: right
+		position: relative
+		h1
+			font-size: 32px
+			font-weight: 300
+			letter-spacing: 3.84px
+			text-transform: uppercase
+			margin-bottom: 50px
+			span
+				display: block
+				font-size: 9px
+				font-weight: 300
+				letter-spacing: 1.08px
+		p
+			width: 55%
+			text-align: right
+			margin-left: auto
+			font-size: 18px
+		img
+			position: absolute
+			max-width: 340px
+			width: 100%
+			bottom: 30px
+			left: 0
+	&__photo
+		width: 40%
+		text-align: center
+		img
+			margin: 0 auto
+			margin-bottom: 10px
+
+.about__brand
+	margin-top: 8%
+	&--item
+		align-items: center
+		&:nth-child(even)
+			flex-direction: row-reverse
+		div
+			width: 50%
+			img
+				width: 100%
+		&_text
+			padding: 0 8%
+			p
+				margin-bottom: 0
+
+
 
 .footer
 	background-color: #000

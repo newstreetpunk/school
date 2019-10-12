@@ -6,6 +6,8 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.condition__item--title
+		font-size: 20px
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -22,7 +24,12 @@
 	.header__bottom nav ul li a
 		font-size: 12px
 		padding: 10px
-
+	.condition__block
+		flex-direction: column
+	.condition__item
+		margin-bottom: 30px
+	.condition__item--title
+		margin-bottom: 20px
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -74,6 +81,8 @@
 		max-height: 20px
 	.header__top--right nav ul li
 		margin-right: 5px
+	.condition__item--title
+		font-size: 18px
 
 
 /*==========  Mobile First  ==========*/

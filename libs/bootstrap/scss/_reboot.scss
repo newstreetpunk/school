@@ -80,12 +80,6 @@ body {
 // 1. Add the correct box sizing in Firefox.
 // 2. Show the overflow in Edge and IE.
 
-hr {
-  box-sizing: content-box; // 1
-  height: 0; // 1
-  overflow: visible; // 2
-}
-
 
 //
 // Typography
@@ -132,19 +126,6 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-}
 
 dt {
   font-weight: $dt-font-weight;

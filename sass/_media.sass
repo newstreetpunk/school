@@ -172,9 +172,22 @@
 			font-size: 16px
 	.about__brand
 		margin-top: 60px
+	.advantages__block
+		flex-direction: column
+		padding: 0 15px
+	.advantages__block ul
+		margin-top: 0 !important
+		li
+			font-size: 2vmax!important
+	.advantages__block ul:first-child
+		margin-left: 0 !important
+	.advantages__block ul:nth-child(even)
+		margin: 0 auto
+	.advantages__block ul:nth-child(odd)
+		margin-left: auto
 
 
-
+// ≥576px
 +media-breakpoint-down(xs)
 	.welcome-hi
 		width: 95%
@@ -256,6 +269,8 @@
 	.fromautor__photo
 		p
 			text-align: left
+	.advantages__block ul li
+		margin-bottom: 8px !important
 
 
 

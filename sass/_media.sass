@@ -37,6 +37,8 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+	body.ishome .header
+		display: block
 	.header
 		position: fixed
 		width: 100%
@@ -71,9 +73,61 @@
 		width: 100%
 	.footer__item--title
 		margin-bottom: 12px
+	.welcome
+		align-items: flex-start
+		padding: 0
+		padding-right: 0
+		padding-left: 0
+	.welcome__logo, .welcome .pizdulka
+		display: none
+	.welcome__block .site-name
+		display: none
+	.welcome__text
+		display: none
+	.welcome__block:before
+		background-color: rgba(#ebedf2, .95)
+		width: 100%
+	.welcome__block, .welcome__block-content
+		min-height: 96vh
+		width: 100%
+		position: relative
+		padding: 0
+		margin-bottom: 0
+	.mobail-logo
+		position: absolute
+		top: 30px
+		left: 20px
+	.welcome-hi
+		position: absolute
+		right: 0
+		top: 63%
+		background-color: rgba(#fff, .8)
+		padding: 10px 30px
+		width: 80%
+		font-size: 38px
+		line-height: 1
+	.welcome-hi span
+		font-size: 24px
+		line-height: 1
+	.welcome .ksy-photo
+		width: 240px
+		right: 20px
+	.welcome .sections__site
+		font-size: 16px
+		letter-spacing: 1.9px
+		font-weight: 500
 	
 // ≥576px
 +media-breakpoint-down(xs)
+	.welcome-hi
+		width: 95%
+		font-size: 30px
+		padding: 10px
+		top: 67%
+	.welcome .ksy-photo
+		right: 0
+	.mobail-logo
+		top: 40px
 	.header__bottom
 		position: absolute
 		top: 0

@@ -28,13 +28,25 @@
 		flex-direction: column
 	.condition__item
 		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
 	.condition__item--title
 		margin-bottom: 20px
+	.footer__item
+		padding-left: 10px
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.header
+		position: fixed
+		width: 100%
+		left: 0
+		top: 0
+		z-index: 1000
 	.header__top--right nav ul li
 		margin-right: 15px
+	.content-page
+		padding-top: 80px
 	.my-kurs
 		display: none
 	span.link
@@ -50,6 +62,15 @@
 	.header__top
 		margin-bottom: 0
 		padding: 0
+	.footer__wrap
+		flex-direction: column
+	.footer__item
+		border-right: none
+		margin-bottom: 25px
+		padding-left: 15%
+		width: 100%
+	.footer__item--title
+		margin-bottom: 12px
 	
 // ≥576px
 +media-breakpoint-down(xs)
@@ -64,7 +85,12 @@
 				flex-direction: column
 				justify-content: flex-start
 				height: 100%
-				padding-top: 50px
+				position: absolute
+				background-color: #fff
+				z-index: 100
+				width: 100%
+				top: 50px
+				left: 0
 				li
 					flex: none
 					width: 100%
@@ -83,6 +109,20 @@
 		margin-right: 5px
 	.condition__item--title
 		font-size: 18px
+	.content-page h2
+		font-size: 30px
+		line-height: 1.2
+		margin-bottom: 0
+		margin-top: 40px
+	.content-page h3
+		font-size: 24px
+		margin-top: 20px
+	.content-page ul li
+		font-size: 16px
+	.content-page ul li:before
+		top: 9px
+	.footer
+		padding-bottom: 30px
 
 
 /*==========  Mobile First  ==========*/
